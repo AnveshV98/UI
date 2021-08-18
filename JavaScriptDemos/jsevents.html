@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js events</title>
+    </head>
+
+    <body>
+        <script>
+            function clickevent(){
+                document.write("This is Anvesh");
+                alert("i'm out");
+            }
+
+            function mouseoverevent(){
+                alert("your are Anvesh");
+            }
+
+            function mouseoutevent(){
+                alert("I'm fine");
+            }
+        </script>
+        <form>
+            <input type="button" onclick="clickevent()" value="who is this"><br><br>
+            <input type="button" onmouseover="mouseoverevent()" value="who am I"><br><br>
+            <input type="button" onmouseout="mouseoutevent()" value="howdy">
+            <input type="button" ondblclick="clickevent()" value="double click">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head><title>functions</title></head>
+    <body>
+        
+        <script>
+            function add(x,y){
+                return x+y;
+            }
+            console.log(add(2,3));
+            document.writeln("addition of two no's: "+add(2,3));
+            
+            var add = function(x,y){
+                return x+y;
+            }
+            console.log(add(5,8));
+            document.writeln(" add of two nums: "+add(5,8));
+
+            var data = add(12,13);
+            console.log(data);
+            document.writeln("add of 2 no's: "+data);
+
+            function show(){
+                console.log("hello");
+            }
+            function disp1(x,y){
+                console.log("add: "+add(1,2));
+            }
+            function disp2(x,y){
+                console.log("sub: "+(3-2));
+            }
+            show(disp1(),disp2());
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scopes</title>
+    </head>
+
+    <body>
+        
+        <script>
+            var a=12; //global variables
+            function add(a,b){ //local variables
+                a=10;
+                b=15;
+                // console.log(a);
+                console.log(a+b);
+            }
+            add();
+            let name2="Anvesh";
+            function show(){
+                let name="ravi";
+                console.log(name); //let variable scope
+                console.log(name2);
+                // console.log(name3);
+            }
+            
+            show();
+            // let name3 ="anuj";
+        </script>
+    </body>
+</html>
