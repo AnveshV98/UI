@@ -1,0 +1,18 @@
+body{
+    /* background-color: burlywood; */
+    /* background-image: url(../images/img1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-repeat: repeat-y;
+    background-position: center; */
+
+    background-image: url(../images/img1.jpg), url(../images/swiggy.png);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+
+}
+.a{
+    background-color: rgb(182, 103, 103);
+}
+
+

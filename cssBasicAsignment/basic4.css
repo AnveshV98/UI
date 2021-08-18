@@ -1,0 +1,17 @@
+.a{
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.b{
+    color: chartreuse;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    
+}

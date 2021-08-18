@@ -1,0 +1,29 @@
+table{
+
+    
+    border-collapse: collapse;
+    border-style: ridge;
+    height: 150px;
+    width: 200px;
+}
+
+th,td{
+    border-color: yellow;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+
+body {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+  .c{
+      /* text-align: right; */
+      vertical-align: 500px;
+  }
+  tr:nth-child(even){
+      background-color: yellow;
+  }
