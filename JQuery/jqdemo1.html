@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jq demo1</title>
+    <script src="../JQuery/jquery-3.6.0.js">
+        
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#a").click(function(){
+                // alert("hello");
+                
+                $("h3").fadeOut(3000)
+                
+            });
+        });
+        
+        
+        
+        $(document).ready(function () {
+            $(".anv").mousemove(function() {
+                // alert("hiiii");
+                
+                
+            });
+            
+        });
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".c").hide(2000);
+            });
+            $("#show").click(function(){
+                $(".c").show(2000);
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    
+    <h1 id="a">hello world!</h1>
+    <p style="font-family: fantasy;"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, obcaecati harum rerum nemo at aspernatur saepe enim maiores? Deleniti obcaecati voluptatem soluta explicabo asperiores eius nam dignissimos iste enim omnis!</h3></p>
+    <p class="anv">click here</p>
+
+    <p class="c">hide and show</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+</body>
+</html>
