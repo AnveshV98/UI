@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bookmyroom</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="header">
+  <h1>BookMyRoom</h1>
+  
+  
+</header>
+
+
+
+<body>
+  
+  
+  
+  <div class="navbar">
+    
+    <a href="#login" >Login</a>
+    <a href="signuo">SignUp</a>
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">City 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">HYDERABAD</a>
+        <a href="#">MUMBAI</a>
+        <a href="#">VIZAG</a>
+        <a href="#">INDORE</a>
+        <a href="#">BANGALORE</a>
+      </div>
+      
+      
+      
+      
+    </div> 
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <form>  
+    
+    
+    <div class="container">  
+      <h1> Book your Room</h1>
+      <hr>  
+      <label> Name </label>   
+      <input type="text" name="Name" placeholder= "Name" size="15" required />   
+      
+      
+      <div>  
+        <label>   
+          Gender :  
+        </label><br>  
+        <input type="radio" value="Male" name="gender" checked > Male   
+        <input type="radio" value="Female" name="gender"> Female   
+        <input type="radio" value="Other" name="gender"> Other  
+        
+      </div>  
+      
+      <div class="date">
+        <label>from-date</label>
+        <input type="date" name="from-date" id=""> <br>
+        <label>to-date</label>
+        <input type="date" name="to-date" id=""><br>
+      </div>
+      <label>   
+        Phone :  
+      </label>  
+      <input type="text" name="country_Code" placeholder="Country Code"  value="+91" size="2"/>   
+      <input type="text" name="phone" placeholder="phone no." size="10" required>   
+      Purpose :  
+      
+      <textarea cols="80" rows="5" name="Purpose" placeholder="Purpose" value="Purpose" required>  
+      </textarea>  
+      <label for="Employee_ID"><b>Employee_ID</b></label>  
+      <input type="text" placeholder="Enter Emp_ID" name="employee_id" required>  
+      
+      <label for="Room_NO"><b>Room_No</b></label>  
+      <input type="Room_no" placeholder="Room_no" name="room_no" required>  
+      
+      <label for="Duration"><b>Duration</b></label>  
+      <input type="time" placeholder="time" name="time" required>  
+      
+      
+    </div>
+      
+    </form>  
+    
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script>
+  
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        var x = $("form").serializeArray();
+        $.each(x, function(i, field) {
+          $("#output").append("<tr><td>"+field.name + ":"
+            + field.value + "<td><tr>");
+            });
+          });
+        });
+      </script>
+      <div id="GFG">
+        <!-- <form action="#">
+          num_of_people: <input type="text" 
+          style="margin: 10px;" num_of_people="">
+          <br>
+        </form> -->
+        <button type="submit" class="registerbtn">BookNow</button>
+        <!-- <button>Submit</button> -->
+      </div>
+      
+      <div id="output" style="color: rgb(163, 148, 85); font-family: Impact;">your booking order:</div>
+      
+    </body>
+    </html>
